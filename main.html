@@ -45,7 +45,7 @@
 <!--              START: App Script Files             -->
 <!--       Add Any of Your Javascript Files Here      -->
 <!-- ************************************************ -->  
-<script type="text/javascript" src="sample-lib.js"></script>
+<script type="text/javascript" src="app-lib.js"></script>
 <!-- ************************************************ -->  
 <!--               END: App Script Files              -->
 <!-- ************************************************ -->
@@ -122,6 +122,11 @@
          }
       }
 </script>
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
 <script type="text/javascript" src="../common/scripts/onlinecheck.js"></script>
 
 <!-- ************************************************ -->
@@ -135,36 +140,9 @@
 
 
 <!-- ************************************************ -->
-<!--        START: Header - Edit ONLY App Title       -->
-<!-- ************************************************ -->
-<script type="text/javascript" src="../common/template/header1.js"></script>
-
-	<!-- App Title - Edit This Section -->
-		Hello World
-			<!-- Include a Link to your App's Connect Page -->
-			<div>
-				<a id="devpage" href="http://factory.snapback-apps.com/app/hello-world/" title="The Factory page where the developers of this App Connect" style="text-decoration:none">Connect with Developers Here!</a>
-			<!-- End Connect Link -->
-			<!-- Share App Function - DO NOT EDIT -->
-				&nbsp;|&nbsp;
-				<a id="webapp" onclick="copyToClipboard(document.getElementById('appurl').innerHTML)" title="Share this App by Copying it's URL">Share this App</a>
-				<div id="appurl" style="visibility: hidden;">http://snapback-apps.com/helloworld/main.html</div>
-			<!--End Share App Function -->
-			</div>			
-	<!-- End App Title -->
-
-<script type="text/javascript" src="../common/template/header2.js"></script>
-<!-- ************************************************ -->
-<!--                    END: Header                   -->
+<!--  START: Left Sidebar - DO NOT EDIT THIS SECTION  -->
 <!-- ************************************************ -->
 
-
-
-
-
-<!-- ************************************************ -->
-<!--     START: Sidebar - DO NOT EDIT THIS SECTION    -->
-<!-- ************************************************ -->
 <script type="text/javascript" src="../common/template/sidebar1.js"></script>
 
 	<script type="text/javascript">
@@ -173,8 +151,9 @@
 	</script>
 
 <script type="text/javascript" src="../common/template/sidebar2.js"></script>
+
 <!-- ************************************************ -->
-<!--                   END: Sidebar                   -->
+<!--                 END: Left Sidebar                -->
 <!-- ************************************************ -->
 
 
@@ -184,15 +163,33 @@
 <!-- ************************************************ -->
 <!--      START: Page Content - Edit this Section     -->
 <!-- ************************************************ -->
-<ul class="tabs">
-    <li><a href="#tab1" title="Run this App from Here">Home</a></li>
-    <li><a href="#tab2" title="This App is free to Use">Pricing</a></li>
-    <li><a href="#tab3" title="The technical details of what this App does">How it Works</a></li>
-    <li><a href="#tab4" title="Record of Each Committee's work and report to users">What's Certified</a></li>
-    <li><a href="#tab5" title="Here's how you can help make this App better">Improve this App</a></li>
-    <li><a href="#tab6" title="Here's how you can help the SnapBack Apps Project">SnapBack Apps Project</a></li>
-    <li><a href="#tab7" title="Read Terms of Use">Terms of Use</a></li>
-</ul>
+<div id="app-intro">
+	<div class="app-name">
+		Hello World
+	</div><!--End #app-name-->
+	
+	<div class="producer-credits">
+		<img src="../common/media/default-group-icon.png" alt="Group Name"/>
+		<a id="connect" href="http://factory.snapback-apps.com/app/hello-world/" title="Connect with the Developers of this App"><!--Include a Link to your App's Connect Page-->
+		Produced by the App Helpers Group<br />
+		Suggest / Contribute / Get Help
+		</a>
+	</div><!--End #producer-credits-->
+</div><!--End #app-intro-->
+
+<div id="tab-container">
+	<div id="tabnav">
+		<ul class="tabs">
+			<li><a href="#tab1" title="Run this App from Here">App Home</a></li>
+			<li><a href="#tab2" title="The technical details of what this App does">How it Works</a></li>
+			<li><a href="#tab3" title="This App is free to Use">Pricing</a></li>
+			<li><a href="#tab4" title="Record of Each Committee's work and report to users">What's Certified</a></li>
+		</ul>
+		<span></span>
+	</div><!--End #tabs-->
+</div><!--End #tab-container -->
+
+<div id="content-container">
       				
 <div id="tab1">
 </div><!--End Tab1-->
@@ -206,14 +203,11 @@
 <div id="tab4">
 </div><!--End Tab4-->
       
-<div id="tab5">
-</div><!--End Tab5-->
-		
-<div id="tab6">
-</div><!--End Tab6-->
 
-<div id="tab7">
-</div><!--End Tab7-->
+	  
+	  
+
+</div><!--End content-container--> 	  
 <!-- ************************************************ -->
 <!--                 END: Page Content                -->
 <!-- ************************************************ -->
